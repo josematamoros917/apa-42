@@ -1,0 +1,19 @@
+@import '../styles/colors.css';
+
+.socialMedia {
+    display: flex; /* Usamos flexbox */
+    justify-content: space-between; /* Alinear iconos a la izquierda */
+    gap: 1rem;
+    align-items: center; /* Alinear verticalmente al centro */
+}
+
+.icon {
+    font-size: 3rem; /* Tamaño de los íconos */
+    color: var(--color-11); /* Color de los íconos */
+    margin: 0; /* Espacio horizontal entre íconos */
+    transition: transform 0.3s; /* Efecto de transición suave */
+}
+
+.icon:hover {
+    transform: scale(1.3); /* Efecto de hover */
+}

@@ -1,0 +1,25 @@
+/* src/components/Navbar.module.css */
+@import '../styles/colors.css';
+
+.navbar {
+    background-color: var(--color-1); /* Color de fondo para el navbar */
+    text-align: left;
+}
+
+.navbar a {
+    text-decoration: none; /* Quitar subrayado de los enlaces */
+}
+
+/* Asegúrate de no sobreescribir la tipografía */
+.navbarBrand {
+    color: var(--color-11); /* Color de texto para el nombre de la marca */
+}
+
+/* Mantenemos solo el color aquí */
+.customNavLink {
+    color: var(--color-8); /* Color de texto para los enlaces de navegación */
+}
+
+.customNavLinkActive {
+    color: var(--color-3); /* Color de texto para el enlace activo */
+}

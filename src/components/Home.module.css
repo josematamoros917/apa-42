@@ -1,0 +1,18 @@
+@import '../styles/colors.css';
+
+/* src/styles/Home.module.css */
+.mainContainer {
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px;
+    gap: 1rem;
+    
+    box-sizing: border-box; /* Asegura que el padding esté incluido en las dimensiones */
+}
+
+
+h2 {
+    margin: 0; /* Sin márgenes en los encabezados */
+}

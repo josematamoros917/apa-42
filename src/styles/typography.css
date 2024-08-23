@@ -1,0 +1,31 @@
+/* src/styles/typography.css */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@400;700&display=swap');
+
+/* Definición de la tipografía */
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif; /* Usamos Lato como la fuente por defecto */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Títulos y frases elegantes */
+h1, h2, h3, h4, h5, h6, .elegant-text {
+    font-family: 'Montserrat', sans-serif; /* Montserrat para títulos y textos elegantes */
+}
+
+/* Textos informales y cuerpos de texto */
+.informal-text {
+    font-family: 'Lato', sans-serif; /* Lato para textos informales */
+}
+
+/* Definición de estilos adicionales */
+.elegant-text-bold {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.informal-text-light {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}

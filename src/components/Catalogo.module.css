@@ -1,0 +1,26 @@
+/* src/components/Catalogo.module.css */
+.catalogo {
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 6.4rem; /* Ajusta el ancho del botón */
+    height: 6.4rem; /* Ajusta la altura del botón */
+    margin: 0; /* Espaciado alrededor del botón */
+    border: 0 solid transparent; /* Para agregar un borde */
+    border-radius: 50%; /* Bordes redondeados para hacerlo circular */
+    transition: transform 0.3s, border-color 0.3s; /* Efecto de transición suave */
+    overflow: hidden; /* Oculta cualquier parte de la imagen que sobresalga */
+}
+
+.catalogo:hover {
+    transform: scale(1.05); /* Efecto de hover */
+    border-color: var(--color-2); /* Cambia el color del borde al pasar el mouse */
+}
+
+.catalogoImage {
+    width: 100%; /* Ajusta al 100% del contenedor */
+    height: 100%; /* Ajusta al 100% del contenedor */
+    object-fit: cover; /* Mantiene la relación de aspecto de la imagen y la recorta si es necesario */
+    border-radius: 50%; /* Bordes redondeados en la imagen para que se ajuste al círculo */
+}
