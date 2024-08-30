@@ -30,8 +30,8 @@ const Menu = ({ isOpen, onClose }) => {
     return (
         <div className={`${styles.overlay} ${isOpen ? styles.flex:''}`}>
             <div className={`${styles.modalContent}`}>
+            <h2 className='elegant-text-bold text-center'>Categorías</h2>
                 <div className={`${styles.categoryList}`}>
-                    <h2>Categorías</h2>
                     {loading ? (
                         <p>Cargando categorías...</p>
                     ) : error ? (

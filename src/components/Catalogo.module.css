@@ -1,15 +1,23 @@
 /* src/components/Catalogo.module.css */
 .catalogo {
-    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
     display: flex;
-    justify-content: center;
+    position: fixed;
+    border: 0 solid transparent; /* Para agregar un borde */
+    margin: 0; /* Espaciado alrededor del botón */
+    justify-content: flex-end;
     align-items: center;
     width: 6.4rem; /* Ajusta el ancho del botón */
     height: 6.4rem; /* Ajusta la altura del botón */
-    margin: 0; /* Espaciado alrededor del botón */
-    border: 0 solid transparent; /* Para agregar un borde */
     border-radius: 50%; /* Bordes redondeados para hacerlo circular */
     transition: transform 0.3s, border-color 0.3s; /* Efecto de transición suave */
+    
+    bottom: 2.5rem;
+    right: 2.8rem;
+    
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    z-index: 1000;
+    gap: 1rem;
+    
     overflow: hidden; /* Oculta cualquier parte de la imagen que sobresalga */
 }
 

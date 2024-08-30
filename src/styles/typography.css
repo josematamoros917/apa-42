@@ -18,6 +18,16 @@ h1, h2, h3, h4, h5, h6, .elegant-text {
 .informal-text {
     font-family: 'Lato', sans-serif; /* Lato para textos informales */
 }
+.informal-text-bold {
+    font-family: 'Lato', sans-serif; /* Lato para textos informales */
+    font-weight: 900;
+}
+
+/* Definición de estilos adicionales */
+.elegant-text {
+    font-family: 'Montserrat', sans-serif;
+    
+}
 
 /* Definición de estilos adicionales */
 .elegant-text-bold {

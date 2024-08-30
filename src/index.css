@@ -5,32 +5,12 @@ body {
   overflow: hidden; /* Para ocultar el scroll extra */
   position: relative; /* Necesario para el pseudo-elemento */
   height: 100vh; /* Aseguramos que el body ocupe toda la altura de la ventana */
+  background: linear-gradient(to bottom, var(--yellow-2), #FFFF99, #FFFFFF); /* Degradé desde yellow-2 hacia blanco */
+  z-index: 1; /* Asegurar que el contenido esté por encima del fondo */
 }
 
-/* Estilo del pseudo-elemento para el fondo */
-body::before {
-  content: '';
-  position: fixed; /* Cambiamos a fixed para que cubra toda la pantalla */
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: url('../public/img/leaves_texture1206.jpg'); /* Ruta a la imagen de fondo */
-  background-size: cover; /* La imagen cubre todo el fondo */
-  background-position: center; /* Centrar la imagen */
-  background-repeat: no-repeat; /* Evitar que la imagen se repita */
-  opacity: 5; /* Opacidad de la imagen */
-  z-index: -1; /* Asegurar que el pseudo-elemento esté detrás del contenido */
-}
-
-/* Estilo para el degradado */
-body::after {
-  content: '';
-  position: fixed; /* Cambiamos a fixed para que cubra toda la pantalla */
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(to bottom, var(--color-1), rgba(255, 255, 255, 0.5)); /* Degradado de color */
-  z-index: -1; /* Asegurar que el degradado esté detrás del contenido */
+/* Estilo adicional para asegurar que el contenido tenga un buen contraste */
+body * {
+  color: #333; /* Aseguramos que el texto tenga buen contraste */
+  z-index: 2; /* Asegurar que el contenido esté por encima del fondo */
 }

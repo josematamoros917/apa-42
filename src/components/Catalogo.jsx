@@ -6,6 +6,7 @@ const Catalogo = ({ onClick }) => {
         <div className={`${styles.catalogo}`} onClick={onClick}>
             <img src={require('./img/logo.png')} alt="Catálogo" className={`${styles.catalogoImage}`} />
         </div>
+        
     );
 };
 

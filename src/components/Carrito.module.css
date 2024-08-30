@@ -1,0 +1,16 @@
+/* src/components/Carrito.module.css */
+.carritoContainer {
+    padding: 20px;
+}
+
+.productoItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.productoImagen {
+    width: 50px; /* Ajusta el tamaño según necesites */
+    height: auto;
+    margin-right: 10px;
+}

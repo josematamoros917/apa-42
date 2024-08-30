@@ -2,16 +2,17 @@
 @import '../styles/colors.css';
 
 .header {
-    text-align: right; /* Alinear el texto a la derecha */
+    text-align: left; /* Alinear el texto a la derecha */
     display: flex; /* Usar flexbox para la organización */
     flex-direction: column; /* Colocar los elementos en columnas */
     align-items: flex-end; /* Alinear los elementos al final (a la derecha) */
-    margin: 20px;
-    padding: 20px; /* Añadir un poco de espacio alrededor */
+    margin: 1.8rem;
+    margin-top: 4rem;
+    padding: 1.3rem; /* Añadir un poco de espacio alrededor */
 }
 
 .companyName {
-    color: var(--color-11);
+    color: var(--orange-2);
     font-size: 1.5rem; /* Aumentar el tamaño para mayor prominencia */
     margin-top: 1.5rem;
     margin-bottom: 3rem; /* Espacio debajo del nombre de la compañía */
@@ -20,12 +21,12 @@
 /* Asegúrate de que elegant-text está aquí para el encabezado */
 .companySentence {
     font-size: 0.9rem; /* Ajusta el tamaño de fuente según tus necesidades */
-    color: var(--color-11); /* Asegúrate de definir este color en tus variables CSS */
+    color: var(--orange-2); /* Asegúrate de definir este color en tus variables CSS */
     margin-top: 10; /* Elimina el margen si es necesario */
 }
 
 .companyCalled {
     font-size: 1.2rem; /* Ajusta el tamaño de fuente según tus necesidades */
-    color: var(--color-11); /* Asegúrate de definir este color en tus variables CSS */
+    color: var(--orange-2); /* Asegúrate de definir este color en tus variables CSS */
     margin-top: 3rem; /* Elimina el margen si es necesario */
 }

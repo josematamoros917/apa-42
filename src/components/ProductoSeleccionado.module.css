@@ -1,0 +1,80 @@
+/* src/components/ProductoSeleccionado.module.css */
+@import '../styles/colors.css';
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 0.01rem;
+    background-color: rgba(255, 255, 255, 0);
+    z-index: 10;
+}
+
+.sliderContainer {
+    width: 100%;
+    overflow: hidden; /* Oculta las imágenes que no están en pantalla */
+    position: relative;
+}
+
+.slider {
+    display: flex;
+    width: 100%;
+    scroll-snap-type: x mandatory; /* Desplazamiento suave entre imágenes */
+    overflow-x: scroll; /* Permite el desplazamiento horizontal */
+    scroll-behavior: smooth; /* Transición suave */
+}
+
+.slider img {
+    flex-shrink: 0;
+    width: 100%;
+    height: 50vh; /* Altura de la imagen */
+    padding-top: 4rem;
+    object-fit: cover; /* Ajusta la imagen */
+    scroll-snap-align: center; /* Centra la imagen cuando se detiene el scroll */
+    border-radius: 0.3rem; /* Bordes redondeados */
+}
+
+.infoContainer {
+    margin-top: 0.2rem;
+    padding: 0.2rem;
+}
+
+.infoContainer p {
+    font-size: 0.9rem;
+    color: var(--red-blacky);
+}
+
+.productoNombre {
+    color: var(--red-blacky);
+}
+
+.botonera {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.precio {
+    margin: 0;
+    font-size: 1.5rem !important;
+}
+
+.boton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--yellow-2);
+    color: var(--orange-2);
+    border: none;
+    border-radius: 1.5rem;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.boton svg {
+    font-size: 2rem;
+}
+
+.boton:hover {
+    background-color: var(--orange-1);
+}

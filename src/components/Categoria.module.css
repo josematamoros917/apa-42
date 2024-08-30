@@ -1,0 +1,20 @@
+/* src/components/Categoria.module.css */
+
+.categoriaContainer {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Asegura que ocupe toda la altura de la vista */
+}
+
+.productoSeleccionado {
+    flex: 1; /* Toma el espacio necesario para mostrar el producto seleccionado */
+    padding: 20px;
+    background-color: #f9f9f9; /* Color de fondo claro para diferenciar la sección */
+}
+
+.productosCategoria {
+    flex: 0 1 auto; /* Ocupa el espacio necesario para mostrar los productos */
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo semitransparente */
+    border-top: 1px solid #ccc; /* Línea superior para separar las secciones */
+}

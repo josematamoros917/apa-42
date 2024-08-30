@@ -2,28 +2,31 @@
 
 .overlay {
     position: fixed; /* Posicionar el modal */
+    padding-top: 1rem;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: var(--color-8); /* Fondo oscuro con opacidad */
+    background-color: var(--yellow-2); /* Fondo oscuro con opacidad */
+    background: linear-gradient(to bottom, var(--yellow-2), var(--yellow)); /* Degradado de color */
     display: flex;
     align-items: center; /* Centrar contenido verticalmente */
     justify-content: space-between; /* Centrar contenido horizontalmente */
-    z-index: 1000; /* Asegurarse de que esté sobre otros elementos */
+    z-index: 1011; /* Asegurarse de que esté sobre otros elementos */
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.4s ease, visibility 0.4S ease;
     gap: 1rem;
 }
-
+.overlay h2 {
+    color: var(--orange-2);
+}
 .flex {
     opacity: 1;
     visibility: visible;
 }
 
 .modalContent {
-    background-color: var(--color-); /* Fondo del modal */
     width: 100%; /* Ancho del modal */
     height: 100%; /* Altura del modal */
     padding: 20px; /* Espaciado interno */
@@ -39,27 +42,63 @@
 
 .header {
     display: flex;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1001;
+    
     justify-content: flex-end; /* Espacio entre RRSS y el botón del menú */
     align-items: center; /* Centrar verticalmente */
     margin-bottom: 20px; /* Espacio debajo del encabezado */
-    padding-top: 4.8rem;
-    margin-top: 3.8rem;
+    
     gap: 1rem;
 }
 
 .categoryList {
+    
+    max-height: 30rem;
+    overflow-y: auto;
     text-align: center; /* Alinear texto en el centro */
     margin-top: 2rem;
 }
-
+.categoryList ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
 .categoryList h2 {
     text-align: center;
 }
 
 .categoryList li {
-    background-color: var(--color-7);
+    background-color: var(--orange-2);
     padding: 0.3rem;
-    margin: 0.2rem;
-    border-radius: 8px;
+    margin-bottom: 0.5rem;
+    border-radius: 20px;
 
+}
+.categoryList li a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: var(--color-10); /* Color de los enlaces */
+    
+    transition: color 0.3s; /* Añade una transición suave al color */
+}
+
+.categoryList li a:hover {
+    color: var(--color-11); /* Cambia el color del texto al pasar el mouse */
+}
+
+/* identico al mainContainer de Home.module.css */
+.catalogoContainer {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1rem;
+    z-index: 1001;
+    gap: 1rem;
+    
+    box-sizing: border-box; /* Oculta cualquier parte de la imagen que sobresalga */
 }

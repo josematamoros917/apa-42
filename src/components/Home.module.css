@@ -3,10 +3,13 @@
 /* src/styles/Home.module.css */
 .mainContainer {
     position: fixed;
+    bottom: 1rem;
+    right: 1rem;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 20px;
+    padding: 1rem;
+    z-index: 1000;
     gap: 1rem;
     
     box-sizing: border-box; /* Asegura que el padding esté incluido en las dimensiones */

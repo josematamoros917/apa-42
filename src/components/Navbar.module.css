@@ -2,24 +2,73 @@
 @import '../styles/colors.css';
 
 .navbar {
-    background-color: var(--color-1); /* Color de fondo para el navbar */
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: var(--yellow-2); /* Color de fondo para el navbar */
     text-align: left;
+    z-index: 999;
+}
+
+/* Estilos para el menú desplegable */
+.navbar-collapse {
+    transition: max-height 1s ease, opacity 0.5s ease; /* Transición suave para la altura y opacidad */
+    overflow: hidden; /* Asegura que no se desborde el contenido */
+    opacity: 0; /* Oculto por defecto */
+    max-height: 0; /* Inicialmente colapsado */
+}
+
+/* Mostrar el menú cuando está expandido */
+.navbar-collapse.show {
+    opacity: 1; /* Muestra el menú cuando está expandido */
+    max-height: 500px; /* Ajusta este valor según sea necesario para el contenido */
+    transition-delay: 0s; /* Sin retardo al abrir */
+}
+
+.navbar-collapse:not(.show) {
+    transition-delay: 0.5s; /* Retardo para la transición de cierre */
+}
+
+/* Estilos para los enlaces de navegación */
+.navbar-nav {
+    background-color: var(--yellow-2); /* Asegura que el fondo del menú tenga el mismo color */
+    margin: 0;
+    width: 100%;
 }
 
 .navbar a {
     text-decoration: none; /* Quitar subrayado de los enlaces */
 }
 
-/* Asegúrate de no sobreescribir la tipografía */
+
 .navbarBrand {
-    color: var(--color-11); /* Color de texto para el nombre de la marca */
+    color: var(--red-blacky); /* Color de texto para el nombre de la marca */
 }
 
-/* Mantenemos solo el color aquí */
 .customNavLink {
-    color: var(--color-8); /* Color de texto para los enlaces de navegación */
+    color: var(--red-blacky); /* Color de texto para los enlaces de navegación */
+    padding: 0.5rem 1rem;
+    width: 100%;
 }
 
-.customNavLinkActive {
-    color: var(--color-3); /* Color de texto para el enlace activo */
+
+
+.customToggler {
+    border: none; /* Elimina el borde del botón */
+    background: transparent; /* Asegúrate de que el fondo sea transparente */
+    outline: none; /* Elimina cualquier contorno visible */
+}
+
+.customToggler:focus {
+    outline: none; /* Elimina el contorno cuando el botón está enfocado */
+    box-shadow: none; /* Elimina cualquier sombra que aparezca al hacer clic */
+}
+
+.customToggler:active {
+    border: none !important; /* Elimina el borde cuando está activo */
+}
+
+.customToggler:hover {
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
 }
